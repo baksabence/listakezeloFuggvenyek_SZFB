@@ -1,5 +1,6 @@
 //import { emberekLISTA } from "./adat.js";
 import { rendez, szures, torol } from "./adatKezelo.js";
+<<<<<<< HEAD
 import { getAdat } from "./aszinkron.js";
 import { htmlOsszeallit, megjelenit } from "./listaMegjelenit.js";
 import { adatokListaba } from "./urlapkezelo.js";
@@ -7,14 +8,32 @@ import { adatokListaba } from "./urlapkezelo.js";
 getAdat("http://localhost:3000/emberekLISTA", init)
 
 let irany = 1; 
+=======
+import { deleteAdat, getAdat } from "./aszinkron.js";
+import { htmlOsszeallit, megjelenit } from "./listaMegjelenit.js";
+import { adatokListaba } from "./urlapkezelo.js";
+
+getAdat("http://localhost:3000/emberekLISTA",init)
+
+let irany = 1; /* 1 - növekvő rendezés , -1 csökkenő rendezés */
+/* init(emberekLISTA); */
+>>>>>>> 99c6ae745edd232395b10fd4d1ea5d2bb347119f
 szuresEsemeny();
 
 function init(lista) {
   console.log(lista)
+<<<<<<< HEAD
   console.log(lista.emberekLISTA)
   megjelenit(htmlOsszeallit(lista.emberekLISTA));
   rendezEsemeny(lista);
   torolEsemeny(lista);
+=======
+  megjelenit(htmlOsszeallit(lista));
+  rendezEsemeny(lista);
+  torolEsemeny(lista);
+  adatokListaba(lista)
+
+>>>>>>> 99c6ae745edd232395b10fd4d1ea5d2bb347119f
 }
 /* 
 a függvény akkor fut le, ha a táblázat név fejlécére kattintunk. */
@@ -44,7 +63,13 @@ function torolEsemeny(lista) {
     /*  event.target az az elem, amelyik kiváltotta az eseményt */
     let id = event.target.id;
     console.log(id);
+<<<<<<< HEAD
     const LISTA = torol(lista, id);
     init(LISTA);
+=======
+    /* const LISTA = torol(lista, id);
+    init(LISTA); */
+    deleteAdat("http://localhost:3000/emberekLISTA",id)
+>>>>>>> 99c6ae745edd232395b10fd4d1ea5d2bb347119f
   });
 }

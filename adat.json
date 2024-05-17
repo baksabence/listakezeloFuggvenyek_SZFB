@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "emberekLISTA":[
     {
         "nev":"Jenő",
@@ -28,4 +29,32 @@
     }
 ]
 
+=======
+  "emberekLISTA": [
+    {
+      "id": "2",
+      "nev": "Juli",
+      "kor": 33,
+      "nem": false
+    },
+    {
+      "id": "4",
+      "nev": "Ádám",
+      "kor": 13,
+      "nem": true
+    },
+    {
+      "id": "8423",
+      "nev": "AAAA",
+      "kor": "12",
+      "nem": true
+    },
+    {
+      "id": "56ca",
+      "nev": "",
+      "kor": "",
+      "nem": true
+    }
+  ]
+>>>>>>> 99c6ae745edd232395b10fd4d1ea5d2bb347119f
 }
